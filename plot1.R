@@ -3,7 +3,7 @@ source("getdata.R")
 globalActivePowerData <- as.numeric(rangeData$Global_active_power)
 
 png(
-  filename = "plot1.png", bg = "white",width = 480, height = 480, units = "px"
+  filename = "plot1.png", bg = "transparent", width = 480, height = 480, units = "px"
 )
 
 hist(
