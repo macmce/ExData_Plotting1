@@ -25,7 +25,7 @@ unzip(zipFileName, overwrite = TRUE, exdir = dataFolder)
 fileData <- read.table(fileName,header = TRUE, sep = ";", na = "?")
 attach(fileData)
 twoDaysData <- Date == "1/2/2007" | Date == "2/2/2007"
-rangeData <- data[twoDaysData,]
+rangeData <- fileData[twoDaysData,]
 attach(rangeData)
 
 rangeData$DateTime <-
